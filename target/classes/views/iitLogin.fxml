@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Button?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="iit.controllers.IitLoginController" styleClass="login-bg">
+    <AnchorPane AnchorPane.topAnchor="120" AnchorPane.leftAnchor="400" styleClass="login-card">
+        <Label text="Customer service APP" styleClass="login-title" AnchorPane.topAnchor="25" AnchorPane.leftAnchor="130"/>
+        <Label text="Marketing expert" styleClass="font-gray" AnchorPane.topAnchor="65" AnchorPane.leftAnchor="190"/>
+        <VBox prefWidth="330" AnchorPane.topAnchor="90" AnchorPane.leftAnchor="90" spacing="20">
+            <TextField promptText="User Name" focusTraversable="false" fx:id="accountField"/>
+            <PasswordField promptText="Password" focusTraversable="false" fx:id="passwordField"/>
+            <Button text="Login" styleClass="login-btn" onAction="#login"/>
+            <HBox spacing="12" alignment="BOTTOM_LEFT">
+                <Button text="Sign Up" styleClass="font-green" onAction="#iitUser"/>
+            </HBox>
+            <padding>
+                <Insets top="20" left="20" right="20" bottom="20"/>
+            </padding>
+        </VBox>
+    </AnchorPane>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iit.controllers.IitEventAddController">
+   <children>
+       <HBox alignment="CENTER" minHeight="50" styleClass="green-theme" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+          <children>
+              <Label styleClass="font-title,green-theme,font-white" text="CREATE MARKET EVENT" />
+          </children>
+       </HBox>
+       <VBox minHeight="400" spacing="20" styleClass="default-theme" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="55">
+          <children>
+              <ComboBox fx:id="productType" prefHeight="25.0" prefWidth="214.0" promptText="SELECT PRODUCT" />
+              <ComboBox fx:id="groupType" prefHeight="25.0" prefWidth="211.0" promptText="SELECT CUST GROUP" />
+              <TextField fx:id="eventName" promptText="EVENT NAME" />
+              <TextArea fx:id="salesmanship" prefHeight="140" promptText="SALESMANSHIP" />
+          </children>
+           <padding>
+               <Insets bottom="10" left="50" right="50" top="10" />
+           </padding>
+       </VBox>
+       <Button onAction="#addEvent" styleClass="green-theme" text="CONFIRM" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="180" AnchorPane.rightAnchor="180" />
+    </children>
+</AnchorPane>

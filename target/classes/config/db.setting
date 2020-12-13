@@ -1,0 +1,9 @@
+## db.settingÎÄ¼þ
+
+url = jdbc:mysql://www.papademas.net:3307/510fp?autoReconnect=true&useSSL=false&rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf-8
+user = fp510
+pass = 510
+
+showSql = true
+formatSql = false
+showParams = false

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.web.WebView?>
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iit.controllers.IitGroupAddController">
+    <children>
+        <VBox minHeight="400" spacing="20" styleClass="default-theme" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="55">
+            <children>
+                <Label styleClass="font-title,font-green" text="GROUP NAME" />
+                <TextField fx:id="groupName" promptText="GROUP NAME" />
+                <Label styleClass="font-title,font-green" text="GROUP DESC" />
+                <TextArea fx:id="groupDesc" prefHeight="140" promptText="GROUP DESC" />
+                <Label styleClass="font-title,font-green" text="Choose file upload" />
+                <HBox spacing="10">
+                    <Button styleClass="green-theme" text="UPLOAD CUSTOMER DATA" onAction="#importCustomerPhones"/>
+                    <Button styleClass="blue-theme"  text="⇩ DOWNLOAD TEMPLATE" onAction="#export"/>
+                </HBox>
+                <TextField fx:id="groupId" editable="false" visible="false" />
+            </children>
+            <padding>
+                <Insets bottom="10" left="50" right="50" top="10" />
+            </padding>
+        </VBox>
+        <Button onAction="#addGroup" styleClass="green-theme" text="CONFIRM" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="180" AnchorPane.rightAnchor="180" />
+    </children>
+</AnchorPane>
